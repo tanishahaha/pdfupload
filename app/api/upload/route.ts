@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { MongoClient } from 'mongodb';
 
-const url = process.env.MONGODB_URI as string; // Replace with your MongoDB Atlas connection string
-const dbName = 'inter'; // Replace with your database name
-const collectionName = 'pdf'; // Replace with your collection name
+const url = process.env.MONGODB_URI as string; 
+const dbName = 'inter'; 
+const collectionName = 'pdf'; 
 
 export async function POST(request: NextRequest) {
   const data = await request.formData();
