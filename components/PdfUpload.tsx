@@ -49,6 +49,7 @@ export function PdfUpload() {
       <input
         type="file"
         name="file"
+        accept='.pdf'
         onChange={(e) => setFile(e.target.files?.[0])}
       />
       {errorMessage && <p className="error-message">{errorMessage}</p>}
